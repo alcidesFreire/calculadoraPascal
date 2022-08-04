@@ -17,25 +17,18 @@
         <Filename Value="untfrmcalculadora.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmCalculadora"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untfrmCalculadora"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="91"/>
-        <CursorPos X="25" Y="93"/>
+        <TopLine Value="93"/>
+        <CursorPos X="3" Y="102"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="untfrmcalculadora.pas"/>
-        <Caret Line="82" Column="29" TopLine="70"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcalculadora.pas"/>
-        <Caret Line="88" Column="29" TopLine="71"/>
-      </Position>
       <Position>
         <Filename Value="untfrmcalculadora.pas"/>
         <Caret Line="99" Column="29" TopLine="74"/>
@@ -147,6 +140,14 @@
       <Position>
         <Filename Value="untfrmcalculadora.pas"/>
         <Caret Line="156" Column="25" TopLine="154"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmcalculadora.pas"/>
+        <Caret Line="93" Column="25" TopLine="91"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmcalculadora.pas"/>
+        <Caret Line="101" Column="3" TopLine="92"/>
       </Position>
     </JumpHistory>
     <RunParams>

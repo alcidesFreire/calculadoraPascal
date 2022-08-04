@@ -17,33 +17,18 @@
         <Filename Value="untfrmcalculadora.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmCalculadora"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untfrmCalculadora"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="85"/>
-        <CursorPos X="28" Y="93"/>
+        <TopLine Value="93"/>
+        <CursorPos X="3" Y="102"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="untfrmcalculadora.pas"/>
-        <Caret Line="88" Column="29" TopLine="71"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcalculadora.pas"/>
-        <Caret Line="99" Column="29" TopLine="74"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcalculadora.pas"/>
-        <Caret Line="89" Column="29" TopLine="49"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcalculadora.pas"/>
-        <Caret Line="69" Column="41" TopLine="49"/>
-      </Position>
       <Position>
         <Filename Value="untfrmcalculadora.pas"/>
         <Caret Line="70" Column="42" TopLine="57"/>
@@ -147,6 +132,22 @@
       <Position>
         <Filename Value="untfrmcalculadora.pas"/>
         <Caret Line="93" Column="25" TopLine="91"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmcalculadora.pas"/>
+        <Caret Line="101" Column="3" TopLine="92"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmcalculadora.pas"/>
+        <Caret Line="102" Column="3" TopLine="93"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmcalculadora.pas"/>
+        <Caret Line="103" Column="3" TopLine="94"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmcalculadora.pas"/>
+        <Caret Line="102" Column="3" TopLine="93"/>
       </Position>
     </JumpHistory>
     <RunParams>

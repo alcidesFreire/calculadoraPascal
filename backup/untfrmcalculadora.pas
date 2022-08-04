@@ -5,7 +5,8 @@ unit untfrmCalculadora;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons,
+  ExtCtrls;
 
 type
 
@@ -15,6 +16,7 @@ type
     btn7: TBitBtn;
     btn2: TBitBtn;
     btn3: TBitBtn;
+    Image1: TImage;
     soma: TBitBtn;
     virgula: TBitBtn;
     btn0: TBitBtn;
