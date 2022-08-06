@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Buttons,
-  ExtCtrls;
+  ExtCtrls,ExpressionParser;
 
 type
 
@@ -34,6 +34,7 @@ type
     edtResultado: TEdit;
     procedure divideClick(Sender: TObject);
     procedure igualClick(Sender: TObject);
+    procedure Image1Click(Sender: TObject);
     procedure limpaClick(Sender: TObject);
     procedure btn0Click(Sender: TObject);
     procedure btn1Click(Sender: TObject);
@@ -51,9 +52,9 @@ type
     procedure vezesClick(Sender: TObject);
     procedure virgulaClick(Sender: TObject);
     private
-    valorA :Real;
-    operacao :String;
-    procedure setarOperacao(Sender: TObject);
+    //valorA :Real;
+    //operacao :String;
+    //procedure setarOperacao(Sender: TObject);
      procedure pegarNumeroBotao(Sender:TObject);
   public
 
@@ -77,17 +78,17 @@ end;
 
 procedure TfrmCalculadora.somaClick(Sender: TObject);
 begin
-  setarOperacao(Sender);
+  pegarNumeroBotao(Sender);
 end;
 
 procedure TfrmCalculadora.subtraiClick(Sender: TObject);
 begin
-  setarOperacao(Sender);
+  pegarNumeroBotao(Sender);
 end;
 
 procedure TfrmCalculadora.vezesClick(Sender: TObject);
 begin
-  setarOperacao(Sender);
+  pegarNumeroBotao(Sender);
 end;
 
 procedure TfrmCalculadora.virgulaClick(Sender: TObject);
@@ -95,12 +96,12 @@ begin
   pegarNumeroBotao(Sender);
 end;
 
-procedure TfrmCalculadora.setarOperacao(Sender: TObject);
-begin
-  valorA := StrToFloat(edtResultado.Text);
-  operacao := TBitBtn(Sender).Caption;
-  edtResultado.Text := '';
-end;
+//procedure TfrmCalculadora.setarOperacao(Sender: TObject);
+//begin
+//  valorA := StrToFloat(edtResultado.Text);
+//  operacao := TBitBtn(Sender).Caption;
+//  edtResultado.Text := '';
+//end;
 
 procedure TfrmCalculadora.pegarNumeroBotao(Sender: TObject);
 begin
@@ -137,25 +138,21 @@ end;
 
 procedure TfrmCalculadora.igualClick(Sender: TObject);
 var resul : Real;
+
 begin
-  if operacao ='X' then begin
-    resul := valorA * StrToFloat(edtResultado.Text);
-  end
-  else if  operacao ='-' then begin
-    resul := valorA - StrToFloat(edtResultado.Text);
-end
-  else if operacao ='+' then begin
-    resul := valorA + StrToFloat(edtResultado.Text);
-    end
-  else if operacao ='/' then begin
-    resul := valorA / StrToFloat(edtResultado.Text);
-    end;
-  edtResultado.Text := FloatToStr(resul);
+     resul := parse(edtResultado.Text);
+     edtResultado.Text := FloatToStr(resul);
+
   end;
+
+procedure TfrmCalculadora.Image1Click(Sender: TObject);
+begin
+
+end;
 
 procedure TfrmCalculadora.divideClick(Sender: TObject);
 begin
-  setarOperacao(Sender);
+  pegarNumeroBotao(Sender);
 end;
 
 
