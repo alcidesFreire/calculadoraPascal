@@ -13,9 +13,17 @@ type
   { TfrmCalculadora }
 
   TfrmCalculadora = class(TForm)
+      btnMedia: TBitBtn;
+      btnPar: TBitBtn;
+      btnPare: TBitBtn;
+      btnAbs: TBitBtn;
+      bitPi: TBitBtn;
+      btnCos: TBitBtn;
+      btnTan: TBitBtn;
     btn7: TBitBtn;
     btn2: TBitBtn;
     btn3: TBitBtn;
+    btnSen: TBitBtn;
     Image1: TImage;
     soma: TBitBtn;
     virgula: TBitBtn;
@@ -32,8 +40,17 @@ type
     subtrai: TBitBtn;
     btn1: TBitBtn;
     edtResultado: TEdit;
+    procedure bitPiClick(Sender: TObject);
+    procedure btnAbsClick(Sender: TObject);
+    procedure btnCosClick(Sender: TObject);
+    procedure btnMediaClick(Sender: TObject);
+    procedure btnParClick(Sender: TObject);
+    procedure btnPareClick(Sender: TObject);
+    procedure btnSenClick(Sender: TObject);
+    procedure btnTanClick(Sender: TObject);
     procedure divideClick(Sender: TObject);
     procedure igualClick(Sender: TObject);
+    procedure igualEnter(Sender: TObject);
     procedure Image1Click(Sender: TObject);
     procedure limpaClick(Sender: TObject);
     procedure btn0Click(Sender: TObject);
@@ -124,6 +141,7 @@ end;
 procedure TfrmCalculadora.btn1Click(Sender: TObject);
 begin
   pegarNumeroBotao(Sender);
+  ShowMessage('vc digitou 1');
 end;
 
 procedure TfrmCalculadora.btn0Click(Sender: TObject);
@@ -145,12 +163,58 @@ begin
 
   end;
 
+procedure TfrmCalculadora.igualEnter(Sender: TObject);
+begin
+
+end;
+
 procedure TfrmCalculadora.Image1Click(Sender: TObject);
 begin
 
 end;
 
 procedure TfrmCalculadora.divideClick(Sender: TObject);
+begin
+  pegarNumeroBotao(Sender);
+end;
+
+procedure TfrmCalculadora.btnSenClick(Sender: TObject);
+begin
+      pegarNumeroBotao(Sender);
+end;
+
+procedure TfrmCalculadora.btnTanClick(Sender: TObject);
+begin
+  pegarNumeroBotao(Sender);
+end;
+
+procedure TfrmCalculadora.btnCosClick(Sender: TObject);
+begin
+  pegarNumeroBotao(Sender);
+end;
+
+procedure TfrmCalculadora.btnMediaClick(Sender: TObject);
+begin
+  pegarNumeroBotao(Sender);
+  ShowMessage('utilize o formato MEDIA[x y z]');
+end;
+
+procedure TfrmCalculadora.btnParClick(Sender: TObject);
+begin
+  pegarNumeroBotao(Sender);
+end;
+
+procedure TfrmCalculadora.btnPareClick(Sender: TObject);
+begin
+  pegarNumeroBotao(Sender);
+end;
+
+procedure TfrmCalculadora.bitPiClick(Sender: TObject);
+begin
+  pegarNumeroBotao(Sender);
+end;
+
+procedure TfrmCalculadora.btnAbsClick(Sender: TObject);
 begin
   pegarNumeroBotao(Sender);
 end;

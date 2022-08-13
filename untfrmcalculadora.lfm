@@ -1,7 +1,7 @@
 object frmCalculadora: TfrmCalculadora
-  Left = 741
+  Left = 854
   Height = 443
-  Top = 248
+  Top = 429
   Width = 1034
   Caption = 'calculadora Alcides'
   ClientHeight = 443
@@ -34713,10 +34713,11 @@ object frmCalculadora: TfrmCalculadora
   object igual: TBitBtn
     Left = 304
     Height = 30
-    Top = 216
+    Top = 296
     Width = 75
     Caption = '='
     OnClick = igualClick
+    OnEnter = igualClick
     TabOrder = 16
   end
   object limpa: TBitBtn
@@ -34729,39 +34730,75 @@ object frmCalculadora: TfrmCalculadora
     TabOrder = 17
   end
   object btnSen: TBitBtn
-    Left = 432
+    Left = 64
     Height = 30
-    Top = 56
+    Top = 256
     Width = 75
     Caption = 'sen'
     OnClick = btnSenClick
     TabOrder = 18
   end
   object btnCos: TBitBtn
-    Left = 432
+    Left = 144
     Height = 30
-    Top = 96
+    Top = 256
     Width = 75
     Caption = 'cos'
     OnClick = btnCosClick
     TabOrder = 19
   end
   object btnTan: TBitBtn
-    Left = 432
+    Left = 224
     Height = 30
-    Top = 136
+    Top = 256
     Width = 75
     Caption = 'tan'
     OnClick = btnTanClick
     TabOrder = 20
   end
   object bitPi: TBitBtn
-    Left = 432
+    Left = 304
     Height = 30
-    Top = 176
+    Top = 216
     Width = 75
     Caption = 'PI'
     OnClick = bitPiClick
     TabOrder = 21
+  end
+  object btnAbs: TBitBtn
+    Left = 64
+    Height = 30
+    Top = 296
+    Width = 75
+    Caption = 'ABS'
+    OnClick = btnAbsClick
+    TabOrder = 22
+  end
+  object btnPar: TBitBtn
+    Left = 144
+    Height = 30
+    Top = 296
+    Width = 75
+    Caption = '('
+    OnClick = btnParClick
+    TabOrder = 23
+  end
+  object btnPare: TBitBtn
+    Left = 224
+    Height = 30
+    Top = 296
+    Width = 75
+    Caption = ')'
+    OnClick = btnPareClick
+    TabOrder = 24
+  end
+  object btnMedia: TBitBtn
+    Left = 304
+    Height = 30
+    Top = 256
+    Width = 75
+    Caption = 'MEDIA'
+    OnClick = btnMediaClick
+    TabOrder = 25
   end
 end
